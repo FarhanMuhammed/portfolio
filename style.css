@@ -324,6 +324,25 @@ section {
     padding-top: 140px;
 }
 
+.hero-profile-container {
+    margin-bottom: 20px;
+}
+
+.hero-profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-neon);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.hero-profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.75);
+}
+
 .badge-container {
     display: flex;
     gap: 12px;
@@ -504,6 +523,45 @@ section {
     border-color: var(--secondary-neon);
     color: var(--secondary-neon);
     background: rgba(0, 255, 102, 0.02);
+}
+
+.about-right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-image-circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, var(--primary-neon), var(--secondary-neon));
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.profile-image-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.5);
+}
+
+.profile-image-circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: var(--bg-dark);
+    border: 4px solid var(--bg-dark);
+    display: block;
 }
 
 .about-stats {
@@ -1055,6 +1113,26 @@ a.method-value:hover {
     color: rgba(0, 255, 102, 0.6);
 }
 
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+.footer-link:hover {
+    color: var(--primary-neon);
+}
+
+.divider {
+    color: rgba(255, 255, 255, 0.1);
+}
+
 /* Scroll Animation Class */
 .scroll-reveal {
     opacity: 0;
@@ -1065,6 +1143,92 @@ a.method-value:hover {
 .scroll-reveal.revealed {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Certifications Section */
+.certifications-header {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border-top: 1px solid rgba(0, 240, 255, 0.1);
+    padding-top: 40px;
+}
+
+.certifications-header h3 {
+    font-size: 1.5rem;
+    font-family: var(--font-sans);
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.cert-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-color);
+    border-radius: var(--card-radius);
+    padding: 24px;
+    display: flex;
+    gap: 20px;
+    backdrop-filter: blur(10px);
+    transition: all var(--transition-speed) ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--border-glow);
+    box-shadow: 0 5px 20px rgba(0, 240, 255, 0.05);
+}
+
+.cert-icon {
+    color: var(--primary-neon);
+    background: rgba(0, 240, 255, 0.05);
+    border: 1px solid rgba(0, 240, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.cert-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.cert-date {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--secondary-neon);
+    margin-bottom: 6px;
+}
+
+.cert-title {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+.cert-issuer {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--primary-neon);
+    margin-bottom: 10px;
+}
+
+.cert-desc {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.5;
 }
 
 /* Responsive CSS */

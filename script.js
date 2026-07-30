@@ -209,6 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
             { text: "[+] Verifying layout assets and components... OK", type: "info" },
             { text: "[+] Loading Muhammed Farhan A S profile competencies... OK", type: "success" },
             { text: "[+] Checking educational credentials (MG University)... VERIFIED", type: "success" },
+            { text: "[+] Auditing professional certifications (OCSP, Deloitte, Tata, Kaspersky)... VERIFIED", type: "success" },
             { text: "[SUCCESS] Scan completed. Node integrity: 100%. Status: SECURE.", type: "success" }
         ];
         

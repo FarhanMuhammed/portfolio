@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { type: "input", text: "cat competencies.cfg" },
         { type: "output", text: "Analyzing domains... Network Security [OK], Digital Forensics [OK], OSINT [OK], Cryptography [OK], Steganography [OK]." },
         { type: "input", text: "cat projects_index.log" },
-        { type: "output", text: "4 active records found: [LogX-Ray], [TrueTrace SDEM], [Seafarer Voyage], [Color My World]." },
+        { type: "output", text: "5 active records found: [LogX-Ray], [TrueTrace SDEM], [Seafarer Voyage], [Colour My World], [Heal Space]." },
         { type: "input", text: "./init_lab.sh --status" },
         { type: "success", text: "System fully online. Interactive simulation modules loaded successfully. Ready to analyze evidence." }
     ];
@@ -208,8 +208,9 @@ document.addEventListener("DOMContentLoaded", () => {
             { text: "[+] Scanning styles.css stylesheet rules... OK", type: "info" },
             { text: "[+] Verifying layout assets and components... OK", type: "info" },
             { text: "[+] Loading Muhammed Farhan A S profile competencies... OK", type: "success" },
-            { text: "[+] Checking educational credentials (MG University)... VERIFIED", type: "success" },
+            { text: "[+] Checking educational credentials (MG University - MSc & BSc)... VERIFIED", type: "success" },
             { text: "[+] Auditing professional certifications (OCSP, Deloitte, Tata, Kaspersky)... VERIFIED", type: "success" },
+            { text: "[+] Verifying professional references (Offenso Hackers Academy & KMM College)... VERIFIED", type: "success" },
             { text: "[SUCCESS] Scan completed. Node integrity: 100%. Status: SECURE.", type: "success" }
         ];
         
